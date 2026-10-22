@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#172a32">
+  <title>向光而行｜校园民谣小样</title>
+  <style>
+    :root { --ink:#172a32; --muted:#5d7078; --paper:#f7f3e9; --gold:#d49a3b; --deep:#183b34; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:"Songti SC","Noto Serif CJK SC","PingFang SC",serif; }
+    .hero { min-height:68vh; padding:24px 20px 70px; display:grid; place-items:center; text-align:center; position:relative; overflow:hidden; background:
+      linear-gradient(rgba(18,33,41,.35),rgba(18,33,41,.76)), url("cover.png") center/cover no-repeat; color:white; }
+    .hero:after { content:""; position:absolute; inset:0; border:1px solid rgba(255,255,255,.2); margin:16px; pointer-events:none; }
+    .eyebrow { letter-spacing:.35em; font:600 12px/1.4 "PingFang SC",sans-serif; opacity:.8; }
+    h1 { margin:18px 0 8px; font-size:clamp(52px,9vw,108px); line-height:1; font-weight:500; letter-spacing:.08em; }
+    .subtitle { margin:0 0 34px; font-size:clamp(16px,2.4vw,22px); opacity:.9; }
+    audio { width:min(620px,calc(100vw - 56px)); display:block; margin:0 auto; }
+    main { width:min(820px,calc(100% - 40px)); margin:-30px auto 0; position:relative; background:#fffdf7; padding:clamp(30px,6vw,64px); box-shadow:0 24px 70px rgba(30,35,30,.12); }
+    h2 { margin:0 0 24px; font-size:24px; font-weight:600; letter-spacing:.06em; }
+    .note { color:var(--muted); font-family:"PingFang SC",sans-serif; line-height:1.8; margin:0 0 30px; }
+    .lyrics { white-space:pre-line; font-size:clamp(17px,2.5vw,20px); line-height:2.05; color:#263c43; }
+    footer { padding:36px 20px 48px; text-align:center; color:#77878d; font:13px/1.7 "PingFang SC",sans-serif; }
+    @media (max-width:600px) { .hero { min-height:60vh; padding-bottom:56px; } main { width:calc(100% - 24px); padding:28px 24px 36px; } }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div>
+      <div class="eyebrow">AI ASSISTED CAMPUS FOLK</div>
+      <h1>向光而行</h1>
+      <p class="subtitle">校园民谣小样｜原创歌词与程序生成伴奏</p>
+      <audio controls preload="metadata" src="song.wav">你的浏览器不支持音频播放。</audio>
+    </div>
+  </section>
+  <main>
+    <h2>歌曲说明</h2>
+    <p class="note">这是一首为大学学习生活创作的原创歌词及纯音乐伴奏小样。旋律、和弦与节奏由程序生成，用于展示“文本生成、歌词改编、音乐编排与网页发布”的完整练习过程。</p>
+    <h2>歌词</h2>
+    <div class="lyrics">清晨的风 吹开教学楼的窗
+我把问题 写进第一行的光
+数字起伏 像远方潮汐回响
+每一次推演 都靠近真实方向
+
+向光而行 不害怕路长
+把复杂世界 化成清晰模样
+向光而行 让答案生长
+今天的脚步 是明天的力量
+
+图书馆前 银杏落满肩膀
+一页页笔记 记下认真时光
+代码与曲线 陪我寻找答案
+年轻的心里 有一片晴朗
+
+向光而行 不害怕路长
+把复杂世界 化成清晰模样
+向光而行 让答案生长
+今天的脚步 是明天的力量</div>
+  </main>
+  <footer>原创歌词 · AI 辅助生成 · 2026</footer>
+</body>
+</html>
